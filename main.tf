@@ -27,10 +27,10 @@ variable "mypassword" {
 
 data "template_file" "user_data_test" {
       template = "${file("userdata_arg_test.tfl")}"
-      vars {
-        myuser = "${var.myuser}"
-        mypassword = "${var.mypassword}"
-      }
+     # vars {
+      #  myuser = "${var.myuser}"
+       # mypassword = "${var.mypassword}"
+      #}
 }
 
 data "aws_ami" "amazon_linux_2" {
