@@ -21,8 +21,8 @@ provider "aws" {
 data "template_file" "user_data_test" {
       template = "${file("userdata_arg_test.tfl")}"
       vars {
-        myuser = "${var.myuser}"
-        mypassword = "${var.mypassword}"
+        myuser = "vins"
+        mypassword = "jen"
       }
 }
 
