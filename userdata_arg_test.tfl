@@ -1,5 +1,5 @@
 #!/bin/bash
-echo ${myuser}, ${mypassword} >/tmp/my_info.log
+#echo ${myuser}, ${mypassword} >/tmp/my_info.log
 
 
 if hash docker 2>/dev/null; then
