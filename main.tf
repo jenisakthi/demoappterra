@@ -3,7 +3,7 @@ terraform {
     organization = "Pocdemo"
 
     workspaces {
-      name = "terra"
+      name = "demoappterra"
     }
     required_providers {
     aws = {
