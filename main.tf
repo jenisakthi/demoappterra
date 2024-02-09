@@ -18,9 +18,16 @@ provider "aws" {
   region  = "us-east-1"
 }
 
+variable "myuser" {
+  default = "t3.nano"
+}
+variable "mypassword" {
+  default = "latest"
+}
+
 data "template_file" "user_data_test" {
       template = "${file("userdata_arg_test.tfl")}"
-     vars {
+      vars {
         myuser = "${var.myuser}"
         mypassword = "${var.mypassword}"
       }
